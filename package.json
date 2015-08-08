@@ -1,0 +1,28 @@
+{
+  "name": "loop-iterator",
+  "version": "0.0.1",
+  "description": "Let's you run through an array and go back to the beginning when you run too far.",
+  "main": "loop-iterator.js",
+  "scripts": {
+    "test": "mocha tests"
+  },
+  "repository": {
+   "type": "git",
+   "url": "https://github.com/dietapete/loop-iterator.git"
+ },
+ "bugs": {
+    "url": "https://github.com/dietapete/loop-iterator/issues"
+  },
+  "homepage": "https://github.com/dietapete/loop-iterator",
+  "keywords": [
+    "array",
+    "iterator",
+    "loop"
+  ],
+  "author": "Henner Woehler <info@henner-woehler.de> (http://www.henner-woehler.de)",
+  "license": "MIT",
+  "devDependencies": {
+    "expect.js": "^0.3.1",
+    "mocha": "^2.2.5"
+  }
+}

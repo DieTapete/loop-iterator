@@ -1,0 +1,15 @@
+# General
+*.log
+
+# OSX
+.DS_Store
+.Spotlight-V100
+.Trashes
+
+# Web
+.sass-cache
+node_modules/
+bower-components/
+
+#Misc
+*.sublime-workspace

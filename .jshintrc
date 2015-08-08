@@ -1,0 +1,10 @@
+{
+  "browser": true,
+  "unused": true,
+  "undef" : false,
+  "asi" : true,
+  "boss" : true,
+  "camelcase" : false,
+  "quotmark" : false,
+  "strict" : false
+}
