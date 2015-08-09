@@ -37,4 +37,11 @@ describe('LoopIterator', function() {
     expect(iterator2.next()).to.be.equal(5);
   });
 
+  it('should work with complex objects', function() {
+    var iterator1 = LoopIterator([{name:'ina'}, {name:'sebastian'}, {name:'michael'}]);
+    var iterator2 = LoopIterator([{name:'patrick'}, {name:'katja'}, {name:'christian'}]);
+    expect(iterator1.next().name).to.be.equal('sebastian');
+    expect(iterator2.next().name).to.be.equal('katja');
+  });
+
 });
