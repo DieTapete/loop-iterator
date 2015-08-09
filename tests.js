@@ -30,4 +30,11 @@ describe('LoopIterator', function() {
     expect(noHistoryIterator.history()).to.be(null);
   });
 
+  it('should work with more than one instance', function() {
+    var iterator1 = LoopIterator([1,2,3]);
+    var iterator2 = LoopIterator([4,5,6]);
+    expect(iterator1.next()).to.be.equal(2);
+    expect(iterator2.next()).to.be.equal(5);
+  });
+
 });

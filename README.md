@@ -60,3 +60,6 @@ Instead of `require` you can also just use a good old `script` tag.
 ## Release History
 
 * 0.1.0 Initial release
+
+## License
+Copyright 2015 Henner Wöhler. Licensed under the MIT license.
