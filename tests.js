@@ -3,7 +3,7 @@ var LoopIterator = require('./loop-iterator');
 
 describe('LoopIterator', function() {
 
-  var iterator = LoopIterator([1,2,3], 3);
+  var iterator = new LoopIterator([1,2,3], 3);
 
   it('should be the first element in the beginning', function() {
     expect(iterator.current()).to.be.equal(1);
@@ -26,20 +26,20 @@ describe('LoopIterator', function() {
   });
 
   it('should not keep a history of not specified', function() {
-    var noHistoryIterator = LoopIterator([1,2,3]);
+    var noHistoryIterator = new LoopIterator([1,2,3]);
     expect(noHistoryIterator.history()).to.be(null);
   });
 
   it('should work with more than one instance', function() {
-    var iterator1 = LoopIterator([1,2,3]);
-    var iterator2 = LoopIterator([4,5,6]);
+    var iterator1 = new LoopIterator([1,2,3]);
+    var iterator2 = new LoopIterator([4,5,6]);
     expect(iterator1.next()).to.be.equal(2);
     expect(iterator2.next()).to.be.equal(5);
   });
 
   it('should work with complex objects', function() {
-    var iterator1 = LoopIterator([{name:'ina'}, {name:'sebastian'}, {name:'michael'}]);
-    var iterator2 = LoopIterator([{name:'patrick'}, {name:'katja'}, {name:'christian'}]);
+    var iterator1 = new LoopIterator([{name:'ina'}, {name:'sebastian'}, {name:'michael'}]);
+    var iterator2 = new LoopIterator([{name:'patrick'}, {name:'katja'}, {name:'christian'}]);
     expect(iterator1.next().name).to.be.equal('sebastian');
     expect(iterator2.next().name).to.be.equal('katja');
   });

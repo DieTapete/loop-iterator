@@ -7,10 +7,10 @@
     "test": "mocha tests"
   },
   "repository": {
-   "type": "git",
-   "url": "https://github.com/dietapete/loop-iterator.git"
- },
- "bugs": {
+    "type": "git",
+    "url": "https://github.com/dietapete/loop-iterator.git"
+  },
+  "bugs": {
     "url": "https://github.com/dietapete/loop-iterator/issues"
   },
   "homepage": "https://github.com/dietapete/loop-iterator",

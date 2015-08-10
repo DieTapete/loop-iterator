@@ -6,5 +6,6 @@
   "boss" : true,
   "camelcase" : false,
   "quotmark" : false,
-  "strict" : false
+  "strict" : false,
+  "esnext" : true
 }
