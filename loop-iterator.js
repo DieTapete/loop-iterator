@@ -21,12 +21,12 @@
 
   p.nextIndex = function(){
     var t = this;
-    return t.currentIndex((t._currentIndex+1 >= t._array.length) ? 0 : t._currentIndex+1);
+    return t.currentIndex(t._currentIndex+1);
   }
 
   p.prevIndex  = function(){
     var t = this;
-    return t.currentIndex((t._currentIndex-1 < 0) ? t._array.length-1 : t._currentIndex-1);
+    return t.currentIndex(t._currentIndex-1);
   }
 
   p.currentIndex = function(index){
@@ -34,12 +34,6 @@
     if (index !== undefined && index != t._currentIndex) {
       t.updateHistory();
       var len = t._array.length;
-      /*if(index < 0) {
-        index = len-index;
-      }
-      else if(index >= len) {
-        index = index%len;
-      }*/
       //circulate
       index = index < 0 ? len+index: (index>=len ? index%len:index);
       t._currentIndex = index;
