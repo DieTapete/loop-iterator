@@ -33,6 +33,15 @@
     var t = this;
     if (index !== undefined && index != t._currentIndex) {
       t.updateHistory();
+      var len = t._array.length;
+      /*if(index < 0) {
+        index = len-index;
+      }
+      else if(index >= len) {
+        index = index%len;
+      }*/
+      //circulate
+      index = index < 0 ? len+index: (index>=len ? index%len:index);
       t._currentIndex = index;
     }
 

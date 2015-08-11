@@ -20,7 +20,25 @@ console.log(iterator.next()); // 'Ina'
 console.log(iterator.prev()); // 'Henner'
 ```
 
-If you want to use the history add a second parameter with the depth to the constructor.
+Set the index to whichever value you want and the iterator stays in the allowed range by circulating.
+```js
+var LoopIterator = require('loop-iterator');
+
+var iterator = new LoopIterator(['Ina', 'Sebastian', 'Henner']);
+console.log(iterator.currentIndex()); // 0
+console.log(iterator.currentIndex(4)); // 1
+console.log(iterator.currentIndex(-1)); // 2
+console.log(iterator.currentIndex(3)); // 0
+
+var counter = 0;
+setInterval(function(){
+	iterator.currentIndex(counter); //0, 1, 2, 0, 1, 2, 0, 1, 2, 0, 1, 2...
+	iterator.current(); //'Ina', 'Sebastian', 'Henner', 'Ina', 'Sebastian', 'Henner'...
+	counter++;
+}, 1000);
+```
+
+If you want to use the history add a second parameter with the number of items you want to record to the constructor.
 ```js
 var LoopIterator = require('loop-iterator');
 
@@ -59,6 +77,8 @@ Instead of `require` you can also just use a good old `script` tag.
 
 ## Release History
 
+* 0.3.0 Added circulation functionality when setting the index
+* 0.2.0 Optimizations
 * 0.1.0 Initial release
 
 ## License

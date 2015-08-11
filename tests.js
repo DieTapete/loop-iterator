@@ -30,6 +30,14 @@ describe('LoopIterator', function() {
     expect(noHistoryIterator.history()).to.be(null);
   });
 
+  it('should circulate when index is set too high', function() {
+    expect(iterator.currentIndex(4)).to.be.equal(1);
+  });
+
+  it('should circulate when index is set less than zero', function() {
+    expect(iterator.currentIndex(-1)).to.be.equal(2);
+  });
+
   it('should work with more than one instance', function() {
     var iterator1 = new LoopIterator([1,2,3]);
     var iterator2 = new LoopIterator([4,5,6]);
