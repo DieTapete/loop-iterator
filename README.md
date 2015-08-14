@@ -1,6 +1,11 @@
 LoopIterator
 =========
 
+[![npm](https://img.shields.io/npm/v/loop-iterator.svg)]()
+[![npm](https://img.shields.io/npm/l/loop-iterator.svg)]()
+[![npm](https://img.shields.io/npm/dm/loop-iterator.svg)]()
+
+
 Let's you run through an array and go back to the beginning when you run too far. You can also iterate backwards and keep a history.
 
 ## Installation
