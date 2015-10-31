@@ -1,6 +1,6 @@
 {
   "name": "loop-iterator",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "description": "Let's you run through an array and go back to the beginning when you run too far.",
   "main": "loop-iterator.js",
   "scripts": {
