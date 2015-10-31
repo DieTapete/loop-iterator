@@ -55,6 +55,7 @@
     if (level > maxLevel) return undefined;
 
     var historyElement = t._history[maxLevel - level];
+    if (!historyElement) return null;
     return (returnIndex ? historyElement.index : historyElement.element);
   }
 
