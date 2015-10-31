@@ -1,8 +1,8 @@
 {
-  "name": "rollover",
-  "version": "1.0.0",
-  "description": "Adds a class names rollover to a dom element on mouseover.",
-  "main": "index.js",
+  "name": "loop-iterator",
+  "version": "0.0.3",
+  "description": "Let's you run through an array and go back to the beginning when you run too far.",
+  "main": "loop-iterator.js",
   "scripts": {
     "test": "mocha tests"
   },

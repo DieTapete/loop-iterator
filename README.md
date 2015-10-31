@@ -82,6 +82,7 @@ Instead of `require` you can also just use a good old `script` tag.
 
 ## Release History
 
+* 0.3.1 Fixes bug when accessing history before there is any history.
 * 0.3.0 Added circulation functionality when setting the index
 * 0.2.0 Optimizations
 * 0.1.0 Initial release
